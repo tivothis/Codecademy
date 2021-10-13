@@ -1,0 +1,229 @@
+/* General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    max-width: 1020px;
+    margin: auto;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 95px 500px 600px 300px 350px 60px;
+    grid-template-areas: "nav nav"
+                         "banner banner"
+                         "about about"
+                         "testimonials testimonials"
+                         "contact contact-info"
+                         "footer footer"
+}
+
+/* Navigation */
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #94595A;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links  {
+    height: 50px;
+    padding-top: 25px;
+    padding-right: 15px;
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+    padding: 10px;
+
+}
+
+nav li {
+    display: inline;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.nav-links a {
+    display: inline;
+    text-decoration: none;
+    padding: 0 5px 0 5px;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #87BFE0;
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 860px) {
+    nav {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 375px) {
+    .grid {
+    grid-template-rows: 500px 600px 300px 350px 60px;
+    grid-template-areas: 
+                        "banner banner"
+                        "about about"
+                        "testimonials testimonials"
+                        "contact contact-info"
+                        "footer footer"
+    }
+}
+
+
+/* Hero */
+
+#banner {
+    grid-area: banner;
+    background-image: url('https://images.unsplash.com/photo-1526889588514-2e695856df85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1167&q=80');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta {
+    position: relative;
+    overflow-wrap: break-word;
+    top: 50%;
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(227, 226, 182, 0.85);
+}
+
+.contact-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+}
+
+.contact-button:hover {
+    background-color: #6c9bb6;
+    color: white;
+}
+
+/* About */
+
+#about {
+    grid-area: about;
+    background-color: #E09D9E;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    min-width: 800px;
+    
+}
+
+#about h2 {
+    text-align: right;
+    margin-right: 30px;
+}
+
+#about p {
+    padding: 30px;
+}
+
+#about img {
+    display: inline;
+    width: 300px;
+}
+
+/* Testimonials */
+
+.testimonials {
+    grid-area: testimonials;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E0E0B4;
+    
+}
+
+.quote {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 30px;
+
+}
+
+
+/* Contact */
+
+#contact {
+    grid-area: contact;
+    padding: 20px;
+    background-color: #87BFE0;
+}
+
+.map {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.contact-info {
+    background-color: #87BFE0;
+    grid-area: contact-info;
+}
+
+.email {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    background-color: #94595A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    position: relative;
+    top: 10px;
+    padding-left: 20px;
+    color: white;
+
+}
+
+.social {
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.social img {
+    width: 30px;
+    height: auto;
+    padding: 0 5px 0 5px;
+}
+
