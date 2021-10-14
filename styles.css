@@ -191,7 +191,7 @@ nav li {
 
 /* Testimonials */
 
-.testimonials {
+#testimonials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
