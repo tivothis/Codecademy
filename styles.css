@@ -60,14 +60,14 @@ nav li {
 
 /*  Mobile and Tablet */
 
-@media  only screen and (max-width: 860px) {
+@media screen and (max-width: 860px) {
     nav {
         justify-content: center;
     }
     
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
 
     .logo {
         width: 100px;
@@ -119,13 +119,13 @@ nav li {
 
 /* Mobile and Tablet */
 
-@media only screen and (max-width: 860px) {
+@media screen and (max-width: 860px) {
     #banner {
         height: 500px;
     }
 }
 
-@media only screen and (max-width: 471px) {
+@media screen and (max-width: 471px) {
     .cta {
         top: 30%;
     }
@@ -166,7 +166,7 @@ nav li {
 
 /* Mobile and Tablet */
 
-@media only screen and (max-width: 860px) {
+@media screen and (max-width: 860px) {
     #about {
         display: flex;
         flex-direction: column;
@@ -209,7 +209,7 @@ nav li {
 
 /* Mobile and Tablet */
 
-@media only screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
     .testimonials {
         display: flex;
         flex-direction: column;
@@ -251,7 +251,7 @@ nav li {
 
 /* Mobile and Tablet */
 
-@media only screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
     #contact {
         flex-direction: column;
     }
@@ -293,7 +293,7 @@ nav li {
 
 /* Mobile and Tablet */
 
-@media only screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     .footer {
         height: 110px;
         flex-direction: column;
