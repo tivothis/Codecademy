@@ -1,0 +1,92 @@
+/* General Styline */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Noto Sans Mono", serif;
+}
+
+p {
+    font-family: "Noto Sans Mono", serif;
+    
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: antiquewhite;
+}
+
+.nav-bar li {
+    display: inline;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    
+}
+
+.nav-bar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Noto Sans Mono";
+    font-size: 25px;
+    color: black;
+}
+
+
+/* Main Content */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: vh;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main p {
+    display: flex;
+    justify-self: center;
+    text-align: right;
+    width: 300px;
+}
+
+
+
+/*  Footer */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: antiquewhite;
+    height: 50px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social img {
+    position: relative;
+    padding: 0 1px 0 1px;
+    top: 20%;
+    max-width: 35px;
+}

@@ -1,0 +1,17 @@
+.project-list {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.project-list li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.project-list a {
+    color: black;
+    font-size: 20px;
+}
